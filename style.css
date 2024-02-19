@@ -4,3 +4,52 @@
  @link https://joseassis.com.br
 */
 
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* importar fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+
+
+/* Smartphone portrait >>>>>>>>>>>>>>>> */
+
+/* Smartphone landscape >>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+    
+}
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    
+}
+
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px) {
+    
+}
