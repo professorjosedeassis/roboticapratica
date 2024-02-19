@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/professorjosedeassis/roboticapratica)
+
+
 # Robótica Prática
 Este repositório hospeda o projeto do site roboticapratica.com
 ## Autor
