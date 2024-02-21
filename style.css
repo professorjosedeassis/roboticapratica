@@ -4,6 +4,18 @@
  @link https://joseassis.com.br
 */
 
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
+
+
+/* variáveis globais */
+:root {
+    --cinzaLayout: #3c3c3c;
+    --brancoLayout: #ffffff;
+}
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -11,12 +23,7 @@
     border: 0;
 }
 
-/* importar fonts */
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
-
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
 html {
     scroll-behavior: smooth;
 }
@@ -26,30 +33,73 @@ body {
     font-size: 1em;
 }
 
+.Container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: column;    
+}
 
 /* Smartphone portrait >>>>>>>>>>>>>>>> */
+/******** Cabeçalho *********/
+#logo img {
+    width: 265px;
+    height: 60.88px;
+}
+
+/********** Rodapé **********/
+footer {
+    background-color: var(--cinzaLayout);
+    color: var(--brancoLayout);
+    text-align: center;      
+}
+
+#social {
+    margin-bottom: 25px;
+}
 
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    
+    .Container {
+        max-width: 540px;       
+    }
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social {
+        margin: 0;
+    }
 }
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    
+    .Container {
+        max-width: 720px;        
+    }
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    
+    .Container {
+        max-width: 960px;        
+    }
 }
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    
+    .Container {
+        max-width: 1140px;        
+    }   
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
-    
+    .Container {
+        max-width: 1360px;        
+    }
 }
