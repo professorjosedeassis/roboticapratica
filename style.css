@@ -99,7 +99,5 @@ footer {
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
-    .Container {
-        max-width: 1360px;        
-    }
+    
 }
