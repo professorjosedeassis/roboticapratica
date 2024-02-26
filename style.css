@@ -13,7 +13,11 @@
 /* variáveis globais */
 :root {
     --cinzaLayout: #3c3c3c;
+    --cinzaTexto: #434343;
     --brancoLayout: #ffffff;
+    --backgroundCard: #f1f3f4;
+    --bordaLayout: #a1a1a1;
+    --vermelhoLayout: #c00000;
 }
 
 /* CSS RESET */
@@ -48,11 +52,46 @@ body {
     flex-direction: column;
 }
 
+/* cartão */
+.Card {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--brancoLayout);
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 /* Smartphone portrait >>>>>>>>>>>>>>>> */
+
 /* Cabeçalho */
 header {
     height: 80px;
-    background-color: aqua;
 }
 
 #logo img {
@@ -109,7 +148,6 @@ footer {
     header {
         max-width: 720px;
         height: 100px;
-        background-color: chartreuse;
     }
 
     #logo img {
@@ -135,7 +173,7 @@ footer {
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    
+
     /* Layout */
     .Container {
         max-width: 1140px;
@@ -145,26 +183,24 @@ footer {
     header {
         max-width: 1140px;
         height: 125px;
-        background-color:chocolate;
     }
 
     #logo img {
         width: 424px;
-        height: 97.4px;        
+        height: 97.4px;
     }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
-    
+
     /* Cabeçalho */
-    header {        
+    header {
         height: 150px;
-        background-color:crimson
     }
 
     #logo img {
         width: 530px;
-        height: 121.75px;       
+        height: 121.75px;
     }
 }
