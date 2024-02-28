@@ -87,6 +87,13 @@ body {
     font-weight: 700;
 }
 
+/* Topo */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Smartphone portrait >>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
@@ -98,6 +105,46 @@ header {
     width: 265px;
     height: 60.88px;
     margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;    
+    position: fixed;
+    top: 25px;
+    right: 3px;
+    color: rgba(60,60,60, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(60,60,60, 0.95);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%; /*estratégia para recolher o menu*/
+    width: 70%;
+    transition: all 0.5s;
+}
+
+/* ativar o checkbox refernte a ul*/
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundCard);
+    text-align: right;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancoLayout)
 }
 
 /* Rodapé */
@@ -150,10 +197,22 @@ footer {
         height: 100px;
     }
 
+    label {
+        font-size: 4em;       
+        top: 25px;
+        right: 5px;      
+    }
+
     #logo img {
         width: 353.34px;
         height: 81.2px;
         margin: 10px 0px 0px 0px;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
     }
 }
 
@@ -189,6 +248,32 @@ footer {
         width: 424px;
         height: 97.4px;
     }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--brancoLayout);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: var(--cinzaLayout);
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelhoLayout)
+    }
+
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
