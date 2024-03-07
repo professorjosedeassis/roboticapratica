@@ -12,11 +12,11 @@
 /* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* variáveis (cores) */
 :root {
-    --logotipo: #e6a326;
-    --cinza: #3c3c3c;
-    --cinzaTexto: #434343;
+    --logotipo: #fba400;
+    --robotica: #535b57;    
+    --cinza: #3c3c3c;    
     --branco: #ffffff;
-    --brancoCard: #f1f3f4;
+    --gelo: #f1f3f4;
     --cinzaClaro: #a1a1a1;
     --vermelho: #cc280f;
 }
@@ -59,7 +59,7 @@ body {
     margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color: var(--brancoCard);
+    background-color: var(--gelo);
     border: 1px solid var(--cinzaClaro);
     border-radius: 25px;
     text-align: center;
@@ -76,7 +76,7 @@ body {
 .Card p {
     padding: 10px 15px 50px 15px;
     text-align: left;
-    color: var(--cinzaTexto);
+    color: var(--cinza);
 }
 
 /* Botão */
@@ -97,6 +97,7 @@ body {
     bottom: 10px;
     z-index: 2;
 }
+
 /* LAYOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -127,7 +128,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: rgba(60, 60, 60, 0.95);
+    background-color: rgba(60, 60, 60, 0.9);
     height: 100vh;
     position: fixed;
     top: 80px;
@@ -142,15 +143,23 @@ nav ul {
 }
 
 nav ul li {
-    border-bottom: 0.5px solid var(--brancoCard);
+    border-bottom: 0.5px solid var(--cinzaClaro);
     text-align: right;
     padding: 15px;
 
 }
 
+/* Esconder estrela do menu */
+#s1,
+#s2,
+#s3,
+#s4 {
+    display: none;
+}
+
 nav ul li a {
     text-decoration: none;
-    color: var(--branco)
+    color: var(--gelo)
 }
 
 /* Destaque */
@@ -179,6 +188,7 @@ footer {
 #social {
     margin-bottom: 25px;
 }
+
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
 
 
@@ -200,13 +210,14 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
-    }    
+    }
 
     /* Rodapé */
     #social {
         margin: 0;
     }
 }
+
 /* Smartphone landscape <<<<<<<<<<<<<<<< */
 
 
@@ -235,7 +246,7 @@ footer {
         font-size: 4em;
         top: 25px;
         right: 5px;
-    }    
+    }
 
     nav ul {
         top: 100px;
@@ -265,6 +276,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 /* Tablet portrait <<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -281,6 +293,7 @@ footer {
         max-width: 992px;
     }
 }
+
 /* Tablet landscape <<<<<<<<<<<<<<<<<<<< */
 
 
@@ -322,12 +335,17 @@ footer {
     }
 
     nav ul li a {
-        color: var(--logotipo);
+        color: var(--robotica);
         font-weight: 500;
     }
-
-    nav ul li a:hover {
-        color: #ce8600;
+    
+    /* Destacar link ativo do menu */
+    #index span#s1,
+    #sobre span#s2,
+    #projetos span#s3,
+    #apoio span#s4 {
+        display: inline;
+        color: var(--vermelho);
     }
 
     /* Destaque */
@@ -344,6 +362,7 @@ footer {
         font-size: 1.1em;
     }
 }
+
 /* PCs ou notebooks HD <<<<<<<<<<<<<<<<< */
 
 
@@ -360,4 +379,5 @@ footer {
         height: 121.75px;
     }
 }
+
 /* PCs ou notebooks Full HD+ <<<<<<<<<<< */
