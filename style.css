@@ -9,29 +9,31 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
 
-
-/* variáveis globais */
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* variáveis (cores) */
 :root {
-    --cinzaLayout: #3c3c3c;
+    --logotipo: #e6a326;
+    --cinza: #3c3c3c;
     --cinzaTexto: #434343;
-    --brancoLayout: #ffffff;
-    --backgroundCard: #f1f3f4;
-    --bordaLayout: #a1a1a1;
-    --vermelhoLayout: #c00000;
+    --branco: #ffffff;
+    --brancoCard: #f1f3f4;
+    --cinzaClaro: #a1a1a1;
+    --vermelho: #cc280f;
 }
 
-/* CSS RESET */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
 
+/* Estrutura do site */
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -52,13 +54,13 @@ body {
     flex-direction: column;
 }
 
-/* cartão */
+/* Cartão */
 .Card {
     margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color: var(--backgroundCard);
-    border: 1px solid var(--bordaLayout);
+    background-color: var(--brancoCard);
+    border: 1px solid var(--cinzaClaro);
     border-radius: 25px;
     text-align: center;
 }
@@ -77,25 +79,28 @@ body {
     color: var(--cinzaTexto);
 }
 
+/* Botão */
 .Button {
     text-decoration: none;
-    background-color: var(--vermelhoLayout);
-    color: var(--brancoLayout);
-    padding: 10px 100px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 10px 90px;
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
 }
 
-/* Topo */
+/* Seta topo do site */
 #topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
+    z-index: 2;
 }
+/* LAYOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Smartphone portrait >>>>>>>>>>>>>>>> */
 
+/* Smartphone portrait >>>>>>>>>>>>>>>>> */
 /* Cabeçalho */
 header {
     height: 80px;
@@ -107,36 +112,37 @@ header {
     margin: 10px 0px 0px 10px;
 }
 
+/* Menu */
 #check {
     display: none;
 }
 
 label {
-    font-size: 3em;    
+    font-size: 3em;
     position: fixed;
     top: 25px;
     right: 3px;
-    color: rgba(60,60,60, 0.6);
+    color: rgba(60, 60, 60, 0.6);
 }
 
 nav ul {
     list-style: none;
-    background-color: rgba(60,60,60, 0.95);
+    background-color: rgba(60, 60, 60, 0.95);
     height: 100vh;
     position: fixed;
     top: 80px;
-    right: -70%; /*estratégia para recolher o menu*/
+    right: -70%;
     width: 70%;
     transition: all 0.5s;
+    z-index: 1;
 }
 
-/* ativar o checkbox refernte a ul*/
 #check:checked~ul {
     right: 0;
 }
 
 nav ul li {
-    border-bottom: 0.5px solid var(--backgroundCard);
+    border-bottom: 0.5px solid var(--brancoCard);
     text-align: right;
     padding: 15px;
 
@@ -144,32 +150,44 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--brancoLayout)
+    color: var(--branco)
+}
+
+/* Destaque */
+main {
+    position: relative;
+    height: 60vh;
+}
+
+main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Banner {
+    display: none;
 }
 
 /* Rodapé */
 footer {
-    background-color: var(--cinzaLayout);
-    color: var(--brancoLayout);
+    background-color: var(--cinza);
+    color: var(--branco);
     text-align: center;
 }
 
 #social {
     margin-bottom: 25px;
 }
+/* Smartphone portrait <<<<<<<<<<<<<<<<< */
 
-/* Smartphone landscape >>>>>>>>>>>>>>> */
+
+/* Smartphone landscape >>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
     /* Layout */
     .Container {
         max-width: 540px;
-    }
-
-    /* Cabeçalho */
-    header {
-        max-width: 540px;
-        margin: 0 auto;
     }
 
     .Flex {
@@ -178,12 +196,21 @@ footer {
         align-items: center;
     }
 
+    /* Cabeçalho */
+    header {
+        max-width: 540px;
+        margin: 0 auto;
+    }    
+
+    /* Rodapé */
     #social {
         margin: 0;
     }
 }
+/* Smartphone landscape <<<<<<<<<<<<<<<< */
 
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
     /* Layout */
@@ -197,26 +224,51 @@ footer {
         height: 100px;
     }
 
-    label {
-        font-size: 4em;       
-        top: 25px;
-        right: 5px;      
-    }
-
     #logo img {
         width: 353.34px;
         height: 81.2px;
         margin: 10px 0px 0px 0px;
     }
 
+    /* Menu */
+    label {
+        font-size: 4em;
+        top: 25px;
+        right: 5px;
+    }    
+
     nav ul {
         top: 100px;
         right: -50%;
         width: 50%;
     }
-}
 
-/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+    /* Destaque */
+    .Banner {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        color: var(--branco);
+    }
+
+    .Banner h1 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.75em;
+        font-weight: 400;
+    }
+
+    .Banner h2 {
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+/* Tablet portrait <<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
 
     /* Layout */
@@ -229,8 +281,10 @@ footer {
         max-width: 992px;
     }
 }
+/* Tablet landscape <<<<<<<<<<<<<<<<<<<< */
 
-/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
     /* Layout */
@@ -249,6 +303,7 @@ footer {
         height: 97.4px;
     }
 
+    /* Menu */
     label {
         display: none;
     }
@@ -257,8 +312,8 @@ footer {
         width: 100%;
         position: static;
         height: auto;
-        background-color: var(--brancoLayout);
-        margin-top: 50px;
+        background-color: var(--branco);
+        margin-top: 51px;
     }
 
     nav ul li {
@@ -267,16 +322,32 @@ footer {
     }
 
     nav ul li a {
-        color: var(--cinzaLayout);
+        color: var(--logotipo);
+        font-weight: 500;
     }
 
     nav ul li a:hover {
-        color: var(--vermelhoLayout)
+        color: #ce8600;
     }
 
-}
+    /* Destaque */
+    main {
+        height: 75vh;
+    }
 
-/* PCs, notebooks ou Tv Full HD + >>>> */
+    .Banner h1 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .Banner h2 {
+        font-size: 1.1em;
+    }
+}
+/* PCs ou notebooks HD <<<<<<<<<<<<<<<<< */
+
+
+/* PCs ou notebooks Full HD+ >>>>>>>>>>> */
 @media (min-width: 1400px) {
 
     /* Cabeçalho */
@@ -289,3 +360,4 @@ footer {
         height: 121.75px;
     }
 }
+/* PCs ou notebooks Full HD+ <<<<<<<<<<< */
