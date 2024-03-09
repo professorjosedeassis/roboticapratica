@@ -121,9 +121,10 @@ header {
 label {
     font-size: 3em;
     position: fixed;
-    top: 25px;
-    right: 3px;
+    top: 20px;
+    right: 15px;
     color: rgba(60, 60, 60, 0.6);
+    z-index: 2;
 }
 
 nav ul {
