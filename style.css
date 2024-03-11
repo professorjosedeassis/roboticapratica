@@ -179,6 +179,11 @@ nav ul li a {
     display: none;
 }
 
+/* Introdução */
+#intro {
+    background-color: var(--logotipo);
+}
+
 /* Rodapé */
 footer {
     background-color: var(--cinza);
