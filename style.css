@@ -164,12 +164,12 @@ nav ul li a {
 }
 
 /* Destaque */
-main {
+#destaque {
     position: relative;
     height: 60vh;
 }
 
-main video {
+#destaque video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -265,13 +265,13 @@ footer {
         color: var(--branco);
     }
 
-    .Banner h1 {
+    #slogan {
         font-family: "Orbitron", sans-serif;
         font-size: 1.75em;
         font-weight: 400;
     }
 
-    .Banner h2 {
+    #textoDestaque {
         font-size: 1em;
         font-weight: 500;
         margin-bottom: 10px;
@@ -350,16 +350,16 @@ footer {
     }
 
     /* Destaque */
-    main {
+    #destaque {
         height: 75vh;
     }
 
-    .Banner h1 {
+    #slogan {
         font-size: 2em;
         font-weight: 400;
     }
 
-    .Banner h2 {
+    #textoDestaque {
         font-size: 1.1em;
     }
 }
