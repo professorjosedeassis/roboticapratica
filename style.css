@@ -13,8 +13,8 @@
 /* variáveis (cores) */
 :root {
     --logotipo: #fba400;
-    --robotica: #535b57;    
-    --cinza: #3c3c3c;    
+    --robotica: #535b57;
+    --cinza: #3c3c3c;
     --branco: #ffffff;
     --gelo: #f1f3f4;
     --cinzaClaro: #a1a1a1;
@@ -54,6 +54,17 @@ body {
     flex-direction: column;
 }
 
+.FlexIntro {
+    display: flex;
+    align-items: center;
+}
+
+.FlexCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 /* Cartão */
 .Card {
     margin-top: 30px;
@@ -88,6 +99,16 @@ body {
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
+}
+
+.Button2 {
+    text-decoration: none;
+    background-color: var(--branco);
+    color: var(--vermelho);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 /* Seta topo do site */
@@ -181,7 +202,58 @@ nav ul li a {
 
 /* Introdução */
 #intro {
-    background-color: var(--logotipo);
+    background: url(img/fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueIntro {
+    display: none;
+}
+
+#textoIntro {
+    color: var(--branco);
+}
+
+#textoIntro h1 {
+    margin-bottom: 10px;
+}
+
+.TopicosIntro {
+    margin-top: 10px;
+}
+
+.TopicosIntro img {
+    margin-right: 20px;
+}
+
+/* YouTube */
+#youtube {
+    background-color: var(--vermelho);
+    color: var(--branco)
+}
+
+#imagemYoutube {
+    display: none;
+}
+
+#textoYoutube h2 {
+    margin-bottom: 10px;
+}
+
+#textoYoutube p {
+    margin-bottom: 35px;
+}
+
+/* projetos */
+#projetos h2 {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+#destacado2 {
+    color: var(--vermelho);
+    font-weight: 800;
 }
 
 /* Rodapé */
@@ -216,6 +288,11 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
+    }
+
+    /* Projetos */
+    #projetos h2 {
+        font-size: 1.2em;
     }
 
     /* Rodapé */
@@ -281,6 +358,11 @@ footer {
         font-weight: 500;
         margin-bottom: 10px;
     }
+
+     /* Projetos */
+     #projetos h2 {
+        font-size: 1.5em;
+    }
 }
 
 /* Tablet portrait <<<<<<<<<<<<<<<<<<<<< */
@@ -297,6 +379,32 @@ footer {
     /* Cabeçalho */
     header {
         max-width: 992px;
+    }
+
+    /* Introdução */
+    #destaqueIntro {
+        display: inline;
+    }
+
+    #destaqueIntro img {
+        margin-right: 50px;
+        border-radius: 50%;
+    }
+
+    /* Youtube */
+    #imagemYoutube {
+        display: inline;
+    }
+
+    #imagemYoutube img {
+        width: 256px;
+        height: 256px;
+        margin-left: 50px;
+    }
+
+    /* Projetos */
+    #projetos h2 {
+        font-size: 2em;
     }
 }
 
@@ -344,7 +452,7 @@ footer {
         color: var(--robotica);
         font-weight: 500;
     }
-    
+
     /* Destacar link ativo do menu */
     #index span#s1,
     #sobre span#s2,
@@ -366,6 +474,36 @@ footer {
 
     #textoDestaque {
         font-size: 1.1em;
+    }
+
+    /* Introdução */
+    #intro {
+        background-attachment: fixed;
+    }
+
+    /* Youtube */
+    #textoYoutube h2 {
+        font-size: 2.5em;
+    }
+
+    #textoYoutube p {
+        font-size: 1.25em;
+        margin-bottom: 50px;
+    }
+
+    #imagemYoutube img {
+        margin-left: 100px;
+    }
+
+    #destacado {
+        font-weight: 700;
+    }
+
+    /* Projetos */
+    #projetos h2 {
+        font-size: 2.5em;
+        font-weight: 500;
+        margin-bottom: 20px;
     }
 }
 
