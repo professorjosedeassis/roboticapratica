@@ -4,20 +4,19 @@
  @link https://joseassis.com.br
 */
 
-/* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
 
 /* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* variáveis (cores) */
 :root {
-    --logotipo: #fba400;
-    --robotica: #535b57;
-    --cinza: #3c3c3c;
     --branco: #ffffff;
     --gelo: #f1f3f4;
+    --cinza: #535b57;
     --cinzaClaro: #a1a1a1;
+    --cinzaMedio: #4D4D4D;
+    --cinzaEscuro: #3c3c3c;
+    --laranja: #fba400;
     --vermelho: #cc280f;
 }
 
@@ -44,28 +43,33 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+
 .Flex,
-.FlexMenu {
-    display: Flex;
-    justify-content: space-between;
+.FlexCard,
+.FlexMenu,
+.FlexSection {
+    display: flex;
 }
 
 .Flex {
     flex-direction: column;
 }
 
-.FlexIntro {
-    display: flex;
-    align-items: center;
-}
-
 .FlexCard {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/* Cartão */
+.FlexMenu {
+    justify-content: space-between;
+}
+
+.FlexSection {
+    align-items: center;
+}
+
+
+/* Cartões */
 .Card {
     margin-top: 30px;
     width: 338px;
@@ -87,7 +91,7 @@ body {
 .Card p {
     padding: 10px 15px 50px 15px;
     text-align: left;
-    color: var(--cinza);
+    color: var(--cinzaEscuro);
 }
 
 /* Botão */
@@ -95,23 +99,13 @@ body {
     text-decoration: none;
     background-color: var(--vermelho);
     color: var(--branco);
-    padding: 10px 90px;
+    padding: 10px 100px;
     border-radius: 25px;
     font-size: 1.2em;
-    font-weight: 700;
-}
-
-.Button2 {
-    text-decoration: none;
-    background-color: var(--branco);
-    color: var(--vermelho);
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1em;
     font-weight: 600;
 }
 
-/* Seta topo do site */
+/* Topo do site */
 #topo {
     position: fixed;
     right: 10px;
@@ -171,7 +165,6 @@ nav ul li {
 
 }
 
-/* Esconder estrela do menu */
 #s1,
 #s2,
 #s3,
@@ -187,7 +180,7 @@ nav ul li a {
 /* Destaque */
 #destaque {
     position: relative;
-    height: 60vh;
+    height: 55vh;
 }
 
 #destaque video {
@@ -216,6 +209,10 @@ nav ul li a {
 }
 
 #textoIntro h1 {
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 0 0 5px var(--cinzaEscuro);
+    font-weight: 600;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -227,9 +224,16 @@ nav ul li a {
     margin-right: 20px;
 }
 
+#textoIntro p {
+    font-weight: 500;
+    text-shadow: 0 0 5px var(--cinzaEscuro);
+}
+
 /* YouTube */
-#youtube {
-    background-color: var(--vermelho);
+#youtube {      
+    background: url(img/fundohal.jpg);
+    background-size: cover;
+    background-position: center;    
     color: var(--branco)
 }
 
@@ -238,6 +242,9 @@ nav ul li a {
 }
 
 #textoYoutube h2 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
     margin-bottom: 10px;
 }
 
@@ -245,20 +252,34 @@ nav ul li a {
     margin-bottom: 35px;
 }
 
+#destacado {
+    font-weight: 700;
+}
+
+#youtube .Button {   
+    border: 2px solid var(--branco);    
+    padding: 10px 20px;    
+    font-size: 1em;       
+}
+
+
 /* projetos */
 #projetos h2 {
     text-align: center;
     font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 20px;
 }
 
 #destacado2 {
     color: var(--vermelho);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 /* Rodapé */
 footer {
-    background-color: var(--cinza);
+    background-color: var(--cinzaEscuro);
     color: var(--branco);
     text-align: center;
 }
@@ -288,11 +309,6 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
-    }
-
-    /* Projetos */
-    #projetos h2 {
-        font-size: 1.2em;
     }
 
     /* Rodapé */
@@ -359,8 +375,8 @@ footer {
         margin-bottom: 10px;
     }
 
-     /* Projetos */
-     #projetos h2 {
+    /* Projetos */
+    #projetos h2 {
         font-size: 1.5em;
     }
 }
@@ -392,14 +408,22 @@ footer {
     }
 
     /* Youtube */
+    #youtube {
+        background: none;
+        background-color: var(--cinzaMedio);
+    }
+
+    #textoYoutube p {
+        margin-right: 100px;    
+    }
+
     #imagemYoutube {
         display: inline;
     }
 
     #imagemYoutube img {
-        width: 256px;
-        height: 256px;
-        margin-left: 50px;
+        width: 190px;
+        height: 190px;      
     }
 
     /* Projetos */
@@ -449,7 +473,7 @@ footer {
     }
 
     nav ul li a {
-        color: var(--robotica);
+        color: var(--cinzaEscuro);
         font-weight: 500;
     }
 
@@ -481,9 +505,13 @@ footer {
         background-attachment: fixed;
     }
 
+    #textoIntro h1 {
+        font-size: 2em;
+    }
+
     /* Youtube */
     #textoYoutube h2 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     #textoYoutube p {
@@ -492,18 +520,13 @@ footer {
     }
 
     #imagemYoutube img {
-        margin-left: 100px;
-    }
-
-    #destacado {
-        font-weight: 700;
+        margin-left: 100px;        
     }
 
     /* Projetos */
     #projetos h2 {
         font-size: 2.5em;
-        font-weight: 500;
-        margin-bottom: 20px;
+        font-weight: 500;       
     }
 }
 
