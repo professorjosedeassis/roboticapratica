@@ -43,10 +43,10 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
-
 .Flex,
 .FlexCard,
 .FlexMenu,
+.FlexPage,
 .FlexSection {
     display: flex;
 }
@@ -64,10 +64,15 @@ body {
     justify-content: space-between;
 }
 
+.FlexPage {
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
 .FlexSection {
     align-items: center;
 }
-
 
 /* Cartões */
 .Card {
@@ -103,6 +108,26 @@ body {
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 600;
+}
+
+/* Banner de páginas */
+.BannerPaginas {
+    height: 200px;
+    background: url(./img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.BannerPaginas h1 {
+    color: var(--gelo);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    font-size: 2.75em;
+    text-shadow: 0px 5px 10px var(--cinzaEscuro),
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Topo do site */
@@ -210,7 +235,10 @@ nav ul li a {
 
 #textoIntro h1 {
     font-family: "Orbitron", sans-serif;
-    text-shadow: 0 0 5px var(--cinzaEscuro);
+    text-shadow: 0px 5px 10px #b2a98f,
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -226,14 +254,17 @@ nav ul li a {
 
 #textoIntro p {
     font-weight: 500;
-    text-shadow: 0 0 5px var(--cinzaEscuro);
+    text-shadow: 0px 5px 10px #b2a98f,
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* YouTube */
-#youtube {      
+#youtube {
     background: url(img/fundohal.jpg);
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     color: var(--branco)
 }
 
@@ -256,12 +287,11 @@ nav ul li a {
     font-weight: 700;
 }
 
-#youtube .Button {   
-    border: 2px solid var(--branco);    
-    padding: 10px 20px;    
-    font-size: 1em;       
+#youtube .Button {
+    border: 2px solid var(--branco);
+    padding: 10px 20px;
+    font-size: 1em;
 }
-
 
 /* projetos */
 #projetos h2 {
@@ -286,6 +316,16 @@ footer {
 
 #social {
     margin-bottom: 25px;
+}
+
+/*** Página sobre ***/
+
+
+#textoSobre h2 {
+    font-family: "Orbitron", sans-serif;
+    margin: 20px 0px;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
@@ -414,7 +454,7 @@ footer {
     }
 
     #textoYoutube p {
-        margin-right: 100px;    
+        margin-right: 100px;
     }
 
     #imagemYoutube {
@@ -423,12 +463,21 @@ footer {
 
     #imagemYoutube img {
         width: 190px;
-        height: 190px;      
+        height: 190px;
     }
 
     /* Projetos */
     #projetos h2 {
         font-size: 2em;
+    }
+
+    /*** Página Sobre ***/
+    .FlexPage {
+        flex-direction: row;        
+    }
+
+    #imagemSobre {
+        margin-right: 50px;
     }
 }
 
@@ -520,13 +569,13 @@ footer {
     }
 
     #imagemYoutube img {
-        margin-left: 100px;        
+        margin-left: 100px;
     }
 
     /* Projetos */
     #projetos h2 {
         font-size: 2.5em;
-        font-weight: 500;       
+        font-weight: 500;
     }
 }
 
