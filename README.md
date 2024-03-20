@@ -4,7 +4,7 @@
 
 # Robótica Prática
 Este repositório hospeda o projeto do site roboticapratica.com
-## Acessar site
+## Acessar site:
 ![QrCode](https://github.com/professorjosedeassis/roboticapratica/blob/main/doc/qrcode_professorjosedeassis.github.io.png)
 ## Autor
 Professor José de Assis
