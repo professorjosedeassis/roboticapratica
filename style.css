@@ -38,6 +38,13 @@ body {
     font-size: 1em;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Orbitron", sans-serif;
+}
+
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
@@ -51,7 +58,8 @@ body {
     display: flex;
 }
 
-.Flex {
+.Flex,
+.FlexPage {
     flex-direction: column;
 }
 
@@ -60,13 +68,8 @@ body {
     justify-content: space-evenly;
 }
 
+.FlexMenu,
 .FlexMenu {
-    justify-content: space-between;
-}
-
-.FlexPage {
-    flex-direction: column;
-    
     justify-content: space-between;
 }
 
@@ -112,7 +115,7 @@ body {
 
 /* Banner de páginas */
 .BannerPaginas {
-    height: 200px;
+    height: 35vh;
     background: url(./img/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -120,14 +123,10 @@ body {
 }
 
 .BannerPaginas h1 {
-    color: var(--gelo);
-    font-family: "Orbitron", sans-serif;
+    color: var(--gelo);   
     font-weight: 600;
     font-size: 2.75em;
-    text-shadow: 0px 5px 10px var(--cinzaEscuro),
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 /* Topo do site */
@@ -233,12 +232,8 @@ nav ul li a {
     color: var(--branco);
 }
 
-#textoIntro h1 {
-    font-family: "Orbitron", sans-serif;
-    text-shadow: 0px 5px 10px #b2a98f,
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
+#textoIntro h1 {   
+    text-shadow: #000 0.05em 0.05em 0.05em;
     font-weight: 600;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -262,7 +257,7 @@ nav ul li a {
 
 /* YouTube */
 #youtube {
-    background: url(img/fundohal.jpg);
+    background: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
     color: var(--branco)
@@ -272,8 +267,8 @@ nav ul li a {
     display: none;
 }
 
-#textoYoutube h2 {
-    font-family: "Orbitron", sans-serif;
+#textoYoutube h2 {   
+    text-shadow: #000 0.05em 0.05em 0.05em;
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 10px;
@@ -281,10 +276,15 @@ nav ul li a {
 
 #textoYoutube p {
     margin-bottom: 35px;
+    text-shadow: 0px 5px 10px var(--cinza),
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-#destacado {
+.Destacado {
     font-weight: 700;
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 #youtube .Button {
@@ -295,8 +295,7 @@ nav ul li a {
 
 /* projetos */
 #projetos h2 {
-    text-align: center;
-    font-family: "Orbitron", sans-serif;
+    text-align: center;    
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 20px;
@@ -321,11 +320,26 @@ footer {
 /*** Página sobre ***/
 
 
-#textoSobre h2 {
-    font-family: "Orbitron", sans-serif;
+#textoSobre h2 {    
     margin: 20px 0px;
     font-size: 1.5em;
     font-weight: 600;
+}
+
+#textoSobre h3 {   
+    margin: 20px 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#textoSobre ol {
+    margin-left: 20px;
+}
+
+#textoSobre h4 {
+    margin-top: 15px;    
+    font-weight: 400;
+    font-size: 1em;
 }
 
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
@@ -403,8 +417,8 @@ footer {
         color: var(--branco);
     }
 
-    #slogan {
-        font-family: "Orbitron", sans-serif;
+    #slogan {     
+        font-family: "Orbitron", sans-serif;   
         font-size: 1.75em;
         font-weight: 400;
     }
@@ -455,6 +469,7 @@ footer {
 
     #textoYoutube p {
         margin-right: 100px;
+        text-shadow: none;
     }
 
     #imagemYoutube {
@@ -462,8 +477,8 @@ footer {
     }
 
     #imagemYoutube img {
-        width: 190px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
     }
 
     /* Projetos */
@@ -473,7 +488,7 @@ footer {
 
     /*** Página Sobre ***/
     .FlexPage {
-        flex-direction: row;        
+        flex-direction: row;
     }
 
     #imagemSobre {
