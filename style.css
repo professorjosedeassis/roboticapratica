@@ -123,7 +123,7 @@ h4 {
 }
 
 .BannerPaginas h1 {
-    color: var(--gelo);   
+    color: var(--gelo);
     font-weight: 600;
     font-size: 2.75em;
     text-shadow: #000 0.05em 0.05em 0.05em;
@@ -232,7 +232,7 @@ nav ul li a {
     color: var(--branco);
 }
 
-#textoIntro h1 {   
+#textoIntro h1 {
     text-shadow: #000 0.05em 0.05em 0.05em;
     font-weight: 600;
     font-size: 1.5em;
@@ -267,7 +267,7 @@ nav ul li a {
     display: none;
 }
 
-#textoYoutube h2 {   
+#textoYoutube h2 {
     text-shadow: #000 0.05em 0.05em 0.05em;
     font-weight: 500;
     font-size: 1.4em;
@@ -288,14 +288,15 @@ nav ul li a {
 }
 
 #youtube .Button {
-    border: 2px solid var(--branco);
     padding: 10px 20px;
+    background-color: var(--gelo);
+    color: var(--cinzaEscuro);
     font-size: 1em;
 }
 
 /* projetos */
 #projetos h2 {
-    text-align: center;    
+    text-align: center;
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 20px;
@@ -308,7 +309,9 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-    background-color: var(--cinzaEscuro);
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
     color: var(--branco);
     text-align: center;
 }
@@ -317,16 +320,22 @@ footer {
     margin-bottom: 25px;
 }
 
+#copyright p {
+    text-shadow: 0px 5px 10px var(--cinzaEscuro),
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
 /*** Página sobre ***/
 
-
-#textoSobre h2 {    
+#textoSobre h2 {
     margin: 20px 0px;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-#textoSobre h3 {   
+#textoSobre h3 {
     margin: 20px 0px;
     font-size: 1.2em;
     font-weight: 500;
@@ -337,9 +346,40 @@ footer {
 }
 
 #textoSobre h4 {
-    margin-top: 15px;    
+    margin-top: 15px;
     font-weight: 400;
     font-size: 1em;
+}
+
+/*** Página apoio ***/
+#apoio h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#apoio h3, h4 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#apoio h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#apoio h4 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#pix {
+    font-weight: 600;
+    font-size: 1.1em;background-color: var(--gelo);
+    width: 238px;
+    padding: 1px 10px;
+    border: 1px solid var(--cinzaClaro);
+    margin-top: 5px;
 }
 
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
@@ -417,8 +457,8 @@ footer {
         color: var(--branco);
     }
 
-    #slogan {     
-        font-family: "Orbitron", sans-serif;   
+    #slogan {
+        font-family: "Orbitron", sans-serif;
         font-size: 1.75em;
         font-weight: 400;
     }
@@ -462,13 +502,8 @@ footer {
     }
 
     /* Youtube */
-    #youtube {
-        background: none;
-        background-color: var(--cinzaMedio);
-    }
-
     #textoYoutube p {
-        margin-right: 100px;
+        margin-right: 60px;
         text-shadow: none;
     }
 
