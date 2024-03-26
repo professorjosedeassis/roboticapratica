@@ -16,7 +16,7 @@
     --cinzaClaro: #a1a1a1;
     --cinzaMedio: #4D4D4D;
     --cinzaEscuro: #3c3c3c;
-    --laranja: #fba400;
+    --laranja: #faa300;
     --vermelho: #cc280f;
 }
 
@@ -232,10 +232,10 @@ nav ul li a {
     color: var(--branco);
 }
 
-#textoIntro h1 {
+#textoIntro h1 {    
     text-shadow: #000 0.05em 0.05em 0.05em;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 500;
+    font-size: 1.4em;
     margin-bottom: 10px;
 }
 
@@ -248,8 +248,7 @@ nav ul li a {
 }
 
 #textoIntro p {
-    font-weight: 500;
-    text-shadow: 0px 5px 10px #b2a98f,
+   text-shadow: 0px 5px 10px var(--laranja),
         0px 10px 10px rgba(0, 0, 0, 0.15),
         0px 15px 15px rgba(0, 0, 0, 0.1),
         0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -309,10 +308,7 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-    background: url(img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    color: var(--branco);
+    background-color: var(--laranja);
     text-align: center;
 }
 
@@ -321,10 +317,7 @@ footer {
 }
 
 #copyright p {
-    text-shadow: 0px 5px 10px var(--cinzaEscuro),
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
 }
 
 /*** Página sobre ***/
@@ -357,7 +350,8 @@ footer {
     font-weight: 600;
 }
 
-#apoio h3, h4 {
+#apoio h3,
+h4 {
     margin-top: 15px;
     font-size: 1.2em;
     font-weight: 500;
@@ -375,7 +369,8 @@ footer {
 
 #pix {
     font-weight: 600;
-    font-size: 1.1em;background-color: var(--gelo);
+    font-size: 1.1em;
+    background-color: var(--gelo);
     width: 238px;
     padding: 1px 10px;
     border: 1px solid var(--cinzaClaro);
