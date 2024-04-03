@@ -232,7 +232,7 @@ nav ul li a {
     color: var(--branco);
 }
 
-#textoIntro h1 {    
+#textoIntro h1 {
     text-shadow: #000 0.05em 0.05em 0.05em;
     font-weight: 500;
     font-size: 1.4em;
@@ -248,7 +248,7 @@ nav ul li a {
 }
 
 #textoIntro p {
-   text-shadow: 0px 5px 10px var(--laranja),
+    text-shadow: 0px 5px 10px var(--laranja),
         0px 10px 10px rgba(0, 0, 0, 0.15),
         0px 15px 15px rgba(0, 0, 0, 0.1),
         0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -376,6 +376,37 @@ h4 {
     border: 1px solid var(--cinzaClaro);
     margin-top: 5px;
 }
+
+/*** Página Índice de projetos ***/
+#indice {
+    background-color: var(--gelo);
+}
+
+.CardProject {     
+    margin-top: 30px;
+    width: 338px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--branco);    
+}
+
+.CardProject a {
+    text-decoration: none;
+    color: var(--cinzaEscuro);
+}
+
+.CardProject h3 {
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.CardProject p {
+    padding: 15px;
+}
+
 
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
 
