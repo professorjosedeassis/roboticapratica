@@ -16,6 +16,7 @@
     --cinzaClaro: #a1a1a1;
     --cinzaMedio: #4D4D4D;
     --cinzaEscuro: #3c3c3c;
+    --preto: #000000;
     --laranja: #faa300;
     --vermelho: #cc280f;
 }
@@ -105,7 +106,7 @@ h4 {
 /* Botão */
 .Button {
     text-decoration: none;
-    background-color: var(--vermelho);
+    background-color: var(--cinzaEscuro);
     color: var(--branco);
     padding: 10px 100px;
     border-radius: 25px;
@@ -229,12 +230,11 @@ nav ul li a {
 }
 
 #textoIntro {
-    color: var(--branco);
+    color: var(--preto);
 }
 
 #textoIntro h1 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.4em;
     margin-bottom: 10px;
 }
@@ -245,13 +245,6 @@ nav ul li a {
 
 .TopicosIntro img {
     margin-right: 20px;
-}
-
-#textoIntro p {
-    text-shadow: 0px 5px 10px var(--laranja),
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* YouTube */
@@ -382,15 +375,16 @@ h4 {
     background-color: var(--gelo);
 }
 
-.CardProject {     
+.CardProject {
     margin-top: 30px;
     width: 338px;
     height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: var(--branco);    
+    background-color: var(--branco);
 }
 
 .CardProject a {
@@ -399,8 +393,8 @@ h4 {
 }
 
 .CardProject h3 {
-    margin-top: 15px;
-    font-weight: 400;
+    margin-top: 20px;
+    font-weight: 500;
 }
 
 .CardProject p {
