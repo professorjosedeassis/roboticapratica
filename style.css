@@ -106,7 +106,7 @@ h4 {
 /* Botão */
 .Button {
     text-decoration: none;
-    background-color: var(--cinzaEscuro);
+    background-color: var(--vermelho);
     color: var(--branco);
     padding: 10px 100px;
     border-radius: 25px;
@@ -128,6 +128,7 @@ h4 {
     font-weight: 600;
     font-size: 2.75em;
     text-shadow: #000 0.05em 0.05em 0.05em;
+    margin-top: 37px;
 }
 
 /* Topo do site */
@@ -393,6 +394,7 @@ h4 {
 }
 
 .CardProject h3 {
+    color: var(--vermelho);
     margin-top: 20px;
     font-weight: 500;
 }
@@ -419,6 +421,11 @@ h4 {
         align-items: center;
     }
 
+    /* Banner de páginas */
+    .BannerPaginas h1 {
+        margin: 0;
+    }
+
     /* Cabeçalho */
     header {
         max-width: 540px;
@@ -428,7 +435,7 @@ h4 {
     /* Rodapé */
     #social {
         margin: 0;
-    }
+    }    
 }
 
 /* Smartphone landscape <<<<<<<<<<<<<<<< */
