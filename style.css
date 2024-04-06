@@ -231,13 +231,7 @@ nav ul li a {
 }
 
 #textoIntro {
-    color: var(--preto);
-}
-
-#textoIntro h1 {
-    font-weight: 400;
-    font-size: 1.4em;
-    margin-bottom: 10px;
+    color: var(--branco);
 }
 
 .TopicosIntro {
@@ -246,6 +240,12 @@ nav ul li a {
 
 .TopicosIntro img {
     margin-right: 20px;
+}
+
+#textoIntro h1, #textoYoutube h2 {
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
 /* YouTube */
@@ -260,13 +260,6 @@ nav ul li a {
     display: none;
 }
 
-#textoYoutube h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-    font-weight: 500;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
 #textoYoutube p {
     margin-bottom: 35px;
     text-shadow: 0px 5px 10px var(--cinza),
@@ -276,8 +269,7 @@ nav ul li a {
 }
 
 .Destacado {
-    font-weight: 700;
-    text-shadow: #000 0.05em 0.05em 0.05em;
+    font-weight: 700;    
 }
 
 #youtube .Button {
@@ -302,7 +294,7 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-    background-color: var(--laranja);
+    background-color: var(--cinzaEscuro);
     text-align: center;
 }
 
@@ -310,8 +302,8 @@ footer {
     margin-bottom: 25px;
 }
 
-#copyright p {
-    font-weight: 500;
+#copyright p {    
+    color: var(--gelo)
 }
 
 /*** Página sobre ***/
@@ -486,13 +478,10 @@ h4 {
 
     #slogan {
         font-family: "Orbitron", sans-serif;
-        font-size: 1.75em;
-        font-weight: 400;
+        font-size: 1.75em;       
     }
 
-    #textoDestaque {
-        font-size: 1em;
-        font-weight: 500;
+    #textoDestaque {        
         margin-bottom: 10px;
     }
 
@@ -554,7 +543,12 @@ h4 {
     }
 
     #imagemSobre {
-        margin-right: 50px;
+        margin-right: 50px;       
+    }
+
+    #imagemSobre img {
+        width: 256px;
+        height: 256px;
     }
 }
 
@@ -633,6 +627,10 @@ h4 {
 
     #textoIntro h1 {
         font-size: 2em;
+    }
+
+    #textoIntro p {
+        font-size: 1.25em;
     }
 
     /* Youtube */
