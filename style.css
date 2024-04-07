@@ -78,6 +78,14 @@ h4 {
     align-items: center;
 }
 
+.Linha {
+    border: 1px solid var(--gelo);
+    background-color: var(--cinzaClaro);
+    width: 90%;
+    height: 1px;
+    padding: 0px;
+}
+
 /* Cartões */
 .Card {
     margin-top: 30px;
@@ -128,7 +136,7 @@ h4 {
     font-weight: 600;
     font-size: 2.75em;
     text-shadow: #000 0.05em 0.05em 0.05em;
-    margin-top: 37px;
+    margin-top: 45px;
 }
 
 /* Topo do site */
@@ -242,7 +250,8 @@ nav ul li a {
     margin-right: 20px;
 }
 
-#textoIntro h1, #textoYoutube h2 {
+#textoIntro h1,
+#textoYoutube h2 {
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 10px;
@@ -269,7 +278,7 @@ nav ul li a {
 }
 
 .Destacado {
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 #youtube .Button {
@@ -302,7 +311,7 @@ footer {
     margin-bottom: 25px;
 }
 
-#copyright p {    
+#copyright p {
     color: var(--gelo)
 }
 
@@ -427,7 +436,7 @@ h4 {
     /* Rodapé */
     #social {
         margin: 0;
-    }    
+    }
 }
 
 /* Smartphone landscape <<<<<<<<<<<<<<<< */
@@ -478,10 +487,10 @@ h4 {
 
     #slogan {
         font-family: "Orbitron", sans-serif;
-        font-size: 1.75em;       
+        font-size: 1.75em;
     }
 
-    #textoDestaque {        
+    #textoDestaque {
         margin-bottom: 10px;
     }
 
@@ -543,7 +552,7 @@ h4 {
     }
 
     #imagemSobre {
-        margin-right: 50px;       
+        margin-right: 50px;
     }
 
     #imagemSobre img {
