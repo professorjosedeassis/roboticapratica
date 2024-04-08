@@ -125,7 +125,7 @@ h4 {
 /* Banner de páginas */
 .BannerPaginas {
     height: 35vh;
-    background: url(./img/banner.jpg);
+    background: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -229,7 +229,7 @@ nav ul li a {
 
 /* Introdução */
 #intro {
-    background: url(img/fundo.png);
+    background: url(../img/fundo.png);
     background-size: cover;
     background-position: center;
 }
@@ -259,7 +259,7 @@ nav ul li a {
 
 /* YouTube */
 #youtube {
-    background: url(img/banner.jpg);
+    background: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     color: var(--branco)
