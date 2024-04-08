@@ -111,6 +111,12 @@ h4 {
     color: var(--cinzaEscuro);
 }
 
+.pixCard {
+    background-color: var(--branco);
+    padding: 1px 6px;
+    font-weight: 600;
+}
+
 /* Botão */
 .Button {
     text-decoration: none;
