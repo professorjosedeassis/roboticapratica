@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Arduino</title>   
-    <link rel="stylesheet" href="./css/style.css">   
-    <meta name="description" content="Aqui você encontra projetos e tutoriais de eletrônica e arduino com foco na robótica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Projetos de automação, IoT, games e robótica com uso da plataforma arduino">
     <link rel="icon" href="./img/favicon.png">
 </head>
 
@@ -31,20 +31,60 @@
         </div>
     </header>
 
-    <!-- Tutoriais -->
-    <section class="Container">
-        <ul>
-            <li> <a href="../tutorial/arduino-hc-06.html">Módulo bluetooth HC-06 com Arduino</a></li>
-        </ul>
-    </section>
+    <!-- Banner das páginas -->
+    <main class="BannerPaginas Flex">
+        <div class="Container">
+            <h1>ARDUINO</h1>
+        </div>
+    </main>
 
-    <!-- Em construção -->
-    <section class="Container">
-        <div class="Card">
-            <img src="./img/aviso.jpg" alt="Em construção">
-            <h3>Em construção</h3>
-            <p>Você pode acompanhar pelo YouTube todos os projetos que estão em produção. Inscreva-se para não perder as novidades.</p>
-            <a href="https://www.youtube.com/c/RoboticapraticaBr?sub_confirmation=1" target="_blank" class="Button">Saiba +</a>
+    <!-- Conteúdo -->
+    <section id="projetos">
+        <div class="Container">
+            <h2>Projetos de automação, IoT, games etc.</h2>
+            <!-- Cards -->
+            <div class="FlexCard">
+                <div class="Card">
+                    <img src="img/apoio.png" alt="apoio">
+                    <h3>Como apoiar os projetos?</h3>
+                    <p>
+                        Você pode me pagar um café! <br>Chave PIX: <span
+                            class="pixCard">josedeassisfilho@gmail.com</span><br>Existem
+                        outras formas de apoiar:
+                    </p>
+                    <a href="apoio.html" class="Button">Saiba +</a>
+                </div>
+                <div class="Card">
+                    <img src="img/arduinotutorial.png" alt="arduino tutorial">
+                    <h3>Primeiros passos com arduino</h3>
+                    <p>
+                        Mini tutorial indicado para quem deseja iniciar o desenvolvimento de projetos usando a
+                        plataforma arduino.
+                    </p>
+                    <a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqxO7Hka8LWBL1B6BE_6O8lU" class="Button"
+                        target="_blank">Saiba +</a>
+                </div>
+                <div class="Card">
+                    <img src="img/automacao.png" alt="automação arduino">
+                    <h3>Automação residencial</h3>
+                    <p>
+                        Desenvolva um projeto simples de automação residencial para controle de lâmpadas ou outros
+                        dispositivos usando a plataforma arduino.
+                    </p>
+                    <a href="https://github.com/professorjosedeassis/arduinolampada" class="Button"
+                        target="_blank">Saiba +</a>
+                </div>
+                <div class="Card">
+                    <img src="img/bb8.png" alt="bb8">
+                    <h3>Em produção</h3>
+                    <p>
+                        Você pode acompanhar pelo canal do YouTube os projetos que estão em produção. Inscreva-se para
+                        não perder as novidades.
+                    </p>
+                    <a href="https://www.youtube.com/c/RoboticapraticaBr?sub_confirmation=1" class="Button"
+                        target="_blank">Saiba +</a>
+                </div>
+            </div>
         </div>
     </section>
 

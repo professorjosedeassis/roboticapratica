@@ -141,8 +141,7 @@ h4 {
     color: var(--gelo);
     font-weight: 600;
     font-size: 2.75em;
-    text-shadow: #000 0.05em 0.05em 0.05em;
-    margin-top: 45px;
+    text-shadow: #000 0.05em 0.05em 0.05em;   
 }
 
 /* Topo do site */
