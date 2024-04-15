@@ -141,7 +141,7 @@ h4 {
     color: var(--gelo);
     font-weight: 600;
     font-size: 2.75em;
-    text-shadow: #000 0.05em 0.05em 0.05em;   
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 /* Topo do site */
@@ -322,47 +322,47 @@ footer {
 
 /*** Página sobre ***/
 
-#textoSobre h2 {
+.TextoSobre h2 {
     margin: 20px 0px;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-#textoSobre h3 {
+.TextoSobre h3 {
     margin: 20px 0px;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-#textoSobre ol {
+.TextoSobre ol {
     margin-left: 20px;
 }
 
-#textoSobre h4 {
+.TextoSobre h4 {
     margin-top: 15px;
     font-weight: 400;
     font-size: 1em;
 }
 
 /*** Página apoio ***/
-#apoio h2 {
+#cafe h2 {
     font-size: 1.5em;
     font-weight: 600;
 }
 
-#apoio h3,
+#cafe h3,
 h4 {
     margin-top: 15px;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-#apoio h3 {
+#cafe h3 {
     font-size: 1.2em;
     font-weight: 500;
 }
 
-#apoio h4 {
+#cafe h4 {
     font-weight: 400;
     font-size: 1em;
 }
@@ -409,6 +409,44 @@ h4 {
     padding: 15px;
 }
 
+/*** Páginas de conteúdo ***/
+#conteudo h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.Video iframe {
+    margin-top: 15px;
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
+#conteudo h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    margin: 25px 0px 10px 0px;
+}
+
+#conteudo img {
+    max-width: 100%;
+}
+
+#conteudo ul li {
+    margin-left: 20px;
+}
+
+#conteudo a {
+    text-decoration: none;
+}
+
+#pasta {
+    width: 125px;
+    height: 106px;
+}
 
 /* Smartphone portrait <<<<<<<<<<<<<<<<< */
 
@@ -556,11 +594,11 @@ h4 {
         flex-direction: row;
     }
 
-    #imagemSobre {
+    .ImagemSobre {
         margin-right: 50px;
     }
 
-    #imagemSobre img {
+    .ImagemSobre img {
         width: 256px;
         height: 256px;
     }

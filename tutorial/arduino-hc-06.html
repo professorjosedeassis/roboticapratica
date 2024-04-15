@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Módulo bluetooth HC-06 - Arduino</title>    
-    <link rel="stylesheet" href="../css/style.css">    
-    <meta name="description" content="Tutorial para configurar ssid, senha e velocidade do módulo bluetooth HC-06 usando o Arduino">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo bluetooth HC-06 - Arduino</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="Tutorial para configurar ssid, senha e velocidade do módulo bluetooth HC-06 usando o Arduino">
     <link rel="icon" href="../img/favicon.png">
 </head>
 
@@ -31,13 +32,63 @@
         </div>
     </header>
 
-    <!-- Em construção -->
-    <section class="Container">
-        <div class="Card">
-            <img src="../img/aviso.jpg" alt="Em construção">
-            <h3>Em construção</h3>
-            <p>Você pode acompanhar pelo YouTube todos os projetos que estão em produção. Inscreva-se para não perder as novidades.</p>
-            <a href="https://www.youtube.com/c/RoboticapraticaBr?sub_confirmation=1" target="_blank" class="Button">Saiba +</a>
+    <!-- Banner das páginas -->
+    <main class="BannerPaginas Flex">
+        <div class="Container">
+            <h1>ARDUINO</h1>
+        </div>
+    </main>
+
+    <!-- Conteúdo -->
+    <section id="conteudo">
+        <div class="Container">
+            <h2>Configuração do módulo bluetooth HC-06</h2>
+            <p>
+                O módulo HC-06 permite estabelecer uma comunicação via bluetooth com placas Arduino que não dispõem
+                deste
+                recurso.
+            </p>
+            <h3>Parâmetros de fábrica:</h3>
+            <ul>
+                <li>SSID: HC-06</li>
+                <li>Senha: 1234</li>
+                <li>Velocidade: 9600 bps</li>
+                <li>Frequência: 2.4Ghz</li>
+                <li>Alcance: 10 metros</li>
+            </ul>
+            <br>
+            <p>Para alterar os parâmetros SSID, senha e velocidade vamos usar uma placa Arduino para enviar comandos AT
+                (linguagem de comandos para modems e módulos bluetooth).</p>
+            <h3>Lista de material:</h3>
+            <ul>
+                <li>1 Arduino UNO ou compatível</li>
+                <li>1 módulo bluetooth HC-06</li>
+                <li>1 resistor de 1K (marrom preto vermelho)</li>
+                <li>1 resistor de 2K (vermelho preto vermelho)</li>
+            </ul>
+            <h3>Montagem do circuito elétrico:</h3>
+            <p>Ligue o módulo HC-06 no Arduino, conforme diagrama abaixo. Os resistores são usados como divisor de
+                tensão
+                para reduzir a tensão de 5V para 3.3V no pino RX do módulo (importante para não danificar o módulo
+                bluetooth).
+            </p>
+            <br>
+            <img src="../img/diagrama-hc06.png" alt="diagrama elétrico HC-06">
+            <h3>Download do código:</h3>
+            <a href="../codigo-fonte/setar_HC-06.ino">🔗 setar_HC-06.ino</a>
+            <h3>Configuração:</h3>
+            <p>Baixe o código no link acima e faça o upload para a placa Arduino.</p>
+            <br>
+            <img src="../img/arduino_ide.png" alt="arduino ide">
+            <br><br>
+            <ul>
+                <li>Ative o Serial Monitor e configure para [No Line Ending] e [115200 baud]. ATENÇÃO! Pode ser
+                    necessário reiniciar o Serial Monitor. (Passo 1)</li>
+                <li>Digite o comando desejado na caixa de entrada. (Passo 2)</li>
+                <li>Se tudo estiver OK o módulo irá responder, executando a ação desejada. (Passo 3)</li>
+            </ul>
+            <br>
+            <img src="../img/serial_monitor.png" alt="arduino ide">
         </div>
     </section>
 
@@ -47,8 +98,8 @@
             <div id="social">
                 <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="../img/youtube.png"
                         alt="youtube"></a>
-                <a href="https://www.linkedin.com/in/professorjosedeassis" target="_blank"><img src="../img/linkedin.png"
-                        alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/professorjosedeassis" target="_blank"><img
+                        src="../img/linkedin.png" alt="linkedin"></a>
                 <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="../img/facebook.png"
                         alt="facebook"></a>
                 <a href="https://www.instagram.com/prof.joseassis/" target="_blank"><img src="../img/instagram.png"
