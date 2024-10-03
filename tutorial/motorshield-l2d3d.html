@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Shield L293D Driver Ponte H Arduino</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="Tutorial para configurar o módulo motor shield L293D no arduino e controlar 4 motores, 1 micro servo e um sensor ultrassônico HC-SR04">
+    <link rel="icon" href="../img/favicon.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="FlexMenu">
+            <div id="logo">
+                <img src="../img/logo.png" alt="logo robótica prática">
+            </div>
+            <!-- Menu -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../projetos.html">Projetos</a></li>
+                    <li><a href="../apoio.html">Apoio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner das páginas -->
+    <main class="BannerPaginas Flex">
+        <div class="Container">
+            <h1>ARDUINO</h1>
+        </div>
+    </main>
+
+    <!-- Conteúdo -->
+    <section id="conteudo">
+        <div class="Container">
+            <h2>Configuração do Motor Shield L293D ponte H no Arduino</h2>
+            <img src="../img/motorshield.jpg" alt="diagrama elétrico HC-06">
+            <p>
+                O motor shield L293D é um shield que pode ser conectado ao arduino, permitindo controlar até 4 motores
+                DC ou 2 motores de passo e 2 servos, sendo muito utilizado em projetos de robótica. Este tutorial mostra
+                como ligar este shield no arduino e controlar 4 motores DC, 1 micro servo 9g e também um sensor
+                ultrassônico HC-SR04.
+            </p>
+            <h3>Dados técnicos:</h3>
+            <ul>
+                <li>Chip: L293D (Cada chip vem com 2 pontes H)</li>
+                <li>Tensão de operação: 5V a 12V</li>
+                <li>Tensão de saída: 4.5V a 36V</li>
+                <li>Corrente de saída: 600mA por canal</li>
+                <li>Até 4 motores DC bi-direcional com seleção individual de velocidades de 8 bits (cerca de 0,5% de
+                    resolução)</li>
+                <li>Até 2 Motores de Passo (Unipolar ou Bipolar) com bobina unica, dupla ou passos interlaçados</li>
+                <li>4 Pontes H: 0,6A por Ponte (1,2A de pico) com proteção térmica e diodos de proteção contra
+                    retro-alimentação</li>
+                <li>Resistores Pull Down mantem motores desativos durante a entrada de alimentação</li>
+                <li>Botão de Reset Arduino disponível no topo da placa</li>
+                <li>Terminais em bloco de 2 pinos e jumper para conexão de alimentação externa</li>
+            </ul>
+            <h3>Diagrama elétrico</h3>
+            <br>
+            <img src="../img/diagrama-motorshield.jpg"
+                alt="diagrama elétrico motor shield l293d 4 motores 1 servo 1 hcsr04">
+            <h3>Download do código:</h3>
+            <a href="../codigo-fonte/motorShield_L293D.ino">🔗 motorShield_L293D.ino</a>
+            <h3>Configuração:</h3>
+            <p>1. Monte o circuito conforme o diagrama elétrico e "espete" o shield na placa arduino. </p>
+            <p>2. Baixe o código fonte do projeto indicado no link acima e faça o upload para a placa Arduino.</p>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="Container Flex">
+            <div id="social">
+                <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="../img/youtube.png"
+                        alt="youtube"></a>
+                <a href="https://www.linkedin.com/in/professorjosedeassis" target="_blank"><img
+                        src="../img/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="../img/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/prof.joseassis/" target="_blank"><img src="../img/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/joseassis" target="_blank"><img src="../img/twitter.png" alt="twitter"></a>
+            </div>
+            <div id="copyright">
+                <p>©<span id="copyrightYear"></span> - Robótica Prática</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Topo do site -->
+    <a href="#logo" id="topo"><img src="../img/topo.png" alt="seta topo"></a>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
