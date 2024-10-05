@@ -480,6 +480,12 @@ h4 {
     #social {
         margin: 0;
     }
+
+    /*** Páginas de conteúdo ***/
+    .Video iframe {
+        width: 560px;
+        height: 315px;
+    }
 }
 
 /* Smartphone landscape <<<<<<<<<<<<<<<< */
